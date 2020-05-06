@@ -1,10 +1,10 @@
 .zone {
-    padding:30px 50px;
-    margin:40px 60px;
+    padding:5px 10px;
+    margin:0px 60px;
     cursor:pointer;
-    display:inline-block;
+    display:block;
     color:#FFF;
-    font-size:2em;
+    font-size:1em;
     border-radius:4px;
     border:1px solid #bbb;
     transition: all 0.3s linear;
@@ -17,11 +17,42 @@
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
+.blue > div {
+    background-color: rgba(0, 0, 0, 0.774);
+    border: 2px solid gray;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin: 25px 10px;
+}
+img {
+    display: block;
+    width: 25%;
+    height: 25%;
+    margin: 0 auto;
+}
+
+ul {
+    display: inline; 
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    padding:0px;
+    margin:0 auto;
+
+}
+  
+li {
+    padding:5px 10px;
+    margin:10px 10px;
+    text-align: center;
+}
+
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
  *  Green Background
  **********************************************************************/
 .green{
+    padding:0px;
     background: #56B870; /* Old browsers */
     background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
@@ -35,6 +66,9 @@
  *  Red Background
  **********************************************************************/
 .red{
+    text-align: center;
+    padding: 150px 50px;
+    font-size: 2em;
     background: #C655BE; /* Old browsers */
     background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
@@ -48,6 +82,7 @@
  *  Yellow Background
  **********************************************************************/
 .yellow{
+    display: none;
     background: #F3AAAA; /* Old browsers */
     background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
@@ -61,6 +96,11 @@
  *  Blue Background
  **********************************************************************/
 .blue{
+    display: grid;
+    align-content: start;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    padding: 10px;
     background: #7abcff; /* Old browsers */
     background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
@@ -69,3 +109,44 @@
     background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
     background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
 }
+
+
+@media (min-width: 600px) {
+    .zone {
+        padding:30px 50px;
+        margin:0px 60px;
+        cursor:pointer;
+        display:block;
+        color:#FFF;
+        font-size:2em;
+        border-radius:4px;
+        border:1px solid #bbb;
+        transition: all 0.3s linear;
+    }
+
+    .blue{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+    }
+
+    .blue > div {
+        margin: 10px 10px;
+    }
+
+    .red{
+        text-align: center;
+        padding: 150px 50px;
+        font-size: 2em;
+    }
+    
+    .yellow {
+        text-align: center;
+        padding: 5px;
+    }
+
+    img {
+        width: 35%;
+        height: 35%;
+    }
+  }
