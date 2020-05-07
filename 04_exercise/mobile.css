@@ -1,0 +1,66 @@
+body {
+    border: 1px solid green;
+    
+  }
+  
+  header {
+    background-image: url("books.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-block-start: 0;
+    padding-top: 0.7em;
+  }
+  
+  #container {
+    border: 1px solid gray;
+    box-shadow: 1px 1px lightgrey;
+    border-radius: 3px;
+    width: 100%;
+    margin: 1em auto;
+    padding: 10px;
+    min-height: 100vh;
+    background-color: rgba(255, 238, 212, 0.53);
+  }
+  
+  #book {
+    width: 10em;
+    margin-right: .5em;
+  }
+  
+  #quantity {
+    width: 5em;
+  }
+  
+  #price {
+    width: 5em;
+  }
+  
+  .container button {
+    background-color: rgba(161, 89, 27, 0.62);
+    border-radius: 5px;
+  }
+  
+  ul {
+    padding-inline-start: 0;
+  }
+  
+  li {
+    padding: 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    width: 430px;
+    margin: .5em 1em 2em 1em;
+  }
+  .li button {
+    grid-column-start: 6;
+  }
+  .hidden {
+    display: none;
+  }
